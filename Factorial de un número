@@ -1,0 +1,19 @@
+package Ejercicios.sisl.com;
+
+import java.util.Scanner;
+
+public class FactorialUnNumero {
+	
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Ingrese numero");
+		int numero = scanner.nextInt();
+		int numeroFactorial = 1;
+		
+		for(int i = 1; i <= numero; i++) {
+			numeroFactorial = numeroFactorial * i;
+		}
+		 System.out.println("El factorial de " + numero + " es: " + numeroFactorial);
+	}
+
+}
